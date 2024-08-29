@@ -16,7 +16,7 @@ app.get('/',function(res,req){
 
 
 // Import the router files
-
+const PORT=process.env.PORT||3000
 const personRoutes = require('./routes/personRoutes');
 const menuItemsRoutes = require('./routes/menuItemRoutes');
 app.use('/person',personRoutes);
